@@ -20,10 +20,35 @@ public class MainActivity extends AppCompatActivity {
         turnLeft = (Button) findViewById(R.id.turnLeft);
         turnRight = (Button) findViewById(R.id.turnRight);
 
+        //Onclick event for going forward
         forward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(this, "Moving Forward", );
+                Toast.makeText(MainActivity.this, "Moving Forward", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        //Onclick event for going back
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Moving Backwards", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        //Onclick event for goint turn right
+        turnRight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Turning Right", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        //Onclick event for going turn left
+        turnLeft.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Turning Left", Toast.LENGTH_SHORT).show();
             }
         });
     }
