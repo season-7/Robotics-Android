@@ -51,7 +51,7 @@
         android:text="Server Response"
         android:textSize="25sp"
         android:gravity="center"
-        android:id="@+id/textView"
+        android:id="@+id/serverResponse"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_alignEnd="@+id/turnRight" />
