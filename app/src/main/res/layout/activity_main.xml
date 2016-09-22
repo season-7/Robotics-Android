@@ -9,8 +9,50 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.robotics.robotics_android.MainActivity">
 
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forward"
+        android:id="@+id/forward"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn Left"
+        android:id="@+id/turnLeft"
+        android:layout_below="@+id/forward"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn Right"
+        android:id="@+id/turnRight"
+        android:layout_alignBottom="@+id/turnLeft"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/back"
+        android:layout_below="@+id/turnLeft"
+        android:layout_alignStart="@+id/forward"
+        android:layout_marginTop="50dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Server Response"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/turnRight" />
 </RelativeLayout>
